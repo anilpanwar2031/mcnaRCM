@@ -1,0 +1,129 @@
+{
+    "RcmEobClaimMaster": [
+        {
+            "ClaimId": "Viewing Claim #1168984193666 (Online_e)",
+            "Status": "Posted",
+            "SubmittedDate": "Submitted:\n07/18/2023",
+            "Processed": "Processed:\n07/26/2023",
+            "DateOfBirth": "Date of Birth:\n10/31/2017",
+            "SubscriberId": "Subscriber ID:\n723291765",
+            "FirstName": "First Name:\nALEXANDER",
+            "LastName": "Last Name:\nHICKSON",
+            "Zip": "Zip Code:\n76013",
+            "FacilityName": "PARK PLACE PEDIATRIC D... (33927)",
+            "FacilityAddress1": "Facility Address:\n1621 PRECINCT LINE RD",
+            "FacilityAddress2": "HURST, TX 76054",
+            "TreatingProvider": "Treating Provider:\nALI AL AQEELI, DDS (67662)",
+            "TreatmentLocation": "Treatment Location:\nOFFICE",
+            "EnteredBy": "Entered By:\nBRYANNTA BATTLE",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/AO5ZSS0Z2R/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf"
+        }
+    ],
+    "RcmEobClaimDetail": [
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D1206",
+            "Description": "TOPICAL APPLICATION OF FLUO...",
+            "AreaOrtooth#": "",
+            "Surface": "",
+            "Billedamount": "$66.00",
+            "Tax": "$0.00",
+            "Paidamount": "$14.70",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D1120",
+            "Description": "PROPHYLAXIS - CHILD",
+            "AreaOrtooth#": "",
+            "Surface": "",
+            "Billedamount": "$83.00",
+            "Tax": "$0.00",
+            "Paidamount": "$36.75",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D0603",
+            "Description": "CARIES RISK ASSESSMENT DOCU...",
+            "AreaOrtooth#": "",
+            "Surface": "",
+            "Billedamount": "$5.00",
+            "Tax": "$0.00",
+            "Paidamount": "$0.00",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D0272",
+            "Description": "BITEWINGS - TWO FILMS",
+            "AreaOrtooth#": "",
+            "Surface": "",
+            "Billedamount": "$60.00",
+            "Tax": "$0.00",
+            "Paidamount": "$23.38",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D0230",
+            "Description": "INTRAORAL - PERIAPICAL EACH...",
+            "AreaOrtooth#": "O",
+            "Surface": "",
+            "Billedamount": "$32.00",
+            "Tax": "$0.00",
+            "Paidamount": "$11.51",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D0220",
+            "Description": "INTRAORAL - PERIAPICAL FIRS...",
+            "AreaOrtooth#": "E",
+            "Surface": "",
+            "Billedamount": "$36.00",
+            "Tax": "$0.00",
+            "Paidamount": "$12.56",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "07/18/2023",
+            "Cdt": "D0120",
+            "Description": "PERIODIC ORAL EVALUATION \u2013 ...",
+            "AreaOrtooth#": "",
+            "Surface": "",
+            "Billedamount": "$67.00",
+            "Tax": "$0.00",
+            "Paidamount": "$28.85",
+            "Carcs": "14",
+            "Comments": ""
+        },
+        {
+            "Proceduredate": "$349.00",
+            "Cdt": "$0.00",
+            "Description": "$127.75",
+            "AreaOrtooth#": null,
+            "Surface": null,
+            "Billedamount": null,
+            "Tax": null,
+            "Paidamount": null,
+            "Carcs": null,
+            "Comments": null
+        }
+    ],
+    "SearchDashboardFilter": [],
+    "EligibilityFiles": [
+        {
+            "fileName": "MCNA%20Online%20Portal.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/AO5ZSS0Z2R/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "description": "",
+            "sourceType": "PDF"
+        }
+    ]
+}

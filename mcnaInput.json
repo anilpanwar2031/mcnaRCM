@@ -1,0 +1,85 @@
+{
+  "InputParameters": {
+    "PayorName": "Managed Care of North America- MCNA",
+    "PayorId": 78,
+    "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+    "AppName": "Revenue Cycle Management",
+    "WebsiteId": "9999",
+    "ScheduleId": 0
+  },
+  "PatientData": [
+    {
+      "EligibilityVerificationId": 34597,
+      "PatientId": "4343",
+      "AppointmentId": "252180",
+      "AppointmentDateTime": "2023-06-28T08:30:00+00:00",
+      "LastName": "Rodriguez",
+      "FirstName": "Aaron",
+      "BirthDate": "10/01/2012",
+      "Relationship": "",
+      "PatientMemberId": "614611512",
+      "SubscriberId": "723291765",
+      "SubscriberFirstName": "Aaron",
+      "SubscriberLastName": "Rodriguez",
+      "SubscriberBirthDate": "10/01/2012",
+      "ClinicServerId": "0991b8eb-7d97-2bf1-db4e-4dbe82aff602",
+      "location": "Byron Murphy",
+      "ClinicNum": "1",
+      "ReceivedDateRangeStart": "07/01/2023",
+      "ReceivedDateRangeEnd": "07/18/2023"
+    }
+  ],
+  "Login": {
+    "Url": "https://portal.mcna.net/login/index",
+    "LoginId": "payorportal01@sdbmail.com",
+    "Password": "Changeme1!",
+    "OtpRequired": true,
+    "OtpEmail": "TODO"
+  },
+  "Xpaths": [
+    {
+      "Id": 400,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 612,
+      "DataContextId": 196,
+      "XPath": "{\"Click\":null,\"Xpaths\":[{\"UsernameXpath\":\"//input[@id='loginUsername']\",\"PasswordXpath\":\"//input[@type='password']\",\"LoginButtonXpath\":\"//div[@id='loginBtn']\",\"PreSteps\":[],\"PostSteps\":[\"//button[contains(text(),'Send a passcode')]\"],\"OtpInputXpath\":\"//input[@inputmode='numeric']\",\"OtpSubmitXpath\":\"//button[contains(text(),'Verify')]\",\"OtpXpath\":\"SMS passcodes: (\\\\d{7})!@Regex\",\"OtpInstructions\":{\"OtpEmail\":\"payorportal@sdbmail.com\",\"OtpEmailPassword\":\"\",\"FromEmail\":\"\",\"EmailTitle\":\"SMS passcodes:\",\"tenantID\":\"e44873dc-54c1-425a-8c70-6bd6ee571de4\",\"clientID\":\"aa33b5af-9a5a-4cb3-b120-2b831663f414\",\"clientSecret\":\"K.g8Q~W6gjw-xk4IE67XzTeA7X2FIcF2ecoyJcnq\",\"SMTPAddress\":\"\",\"EncryptionType\":\"\",\"ImapType\":\"\",\"OtpWait\":20},\"AdditionalInfo\":{\"Script\":{\"AfterPageLoad\":{\"js\":\"document.querySelector('#loginUsername').setAttribute('class','act');document.querySelector('#loginPassword').setAttribute('style','display: block;');document.querySelector('#loginPasswordPlain').setAttribute('style','display: none')\"}},\"headless\":false}}]}",
+      "IsActive": true,
+      "DataContextName": "EligibilityLogin",
+      "ProductCategoryId": 6
+    },
+    {
+      "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"ClaimId\"},\"xpath\":\"//div[contains(text(),'Viewing Claim')]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Status\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[1]/div/div[3]/span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"SubmittedDate\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[1]/div/div[4]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Processed\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[1]/div/div[5]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"DateOfBirth\"},\"xpath\":\"//div[@id='claimGraySubscriber']/div[3]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"SubscriberId\"},\"xpath\":\"//div[@id='claimGraySubscriber']/div[4]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FirstName\"},\"xpath\":\"//div[@id='claimGraySubscriber']/div[5]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"LastName\"},\"xpath\":\"//div[@id='claimGraySubscriber']/div[6]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"Zip\"},\"xpath\":\"//div[@id='claimGraySubscriber']/div[7]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FacilityName\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[3]/span\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FacilityAddress1\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[4]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"FacilityAddress2\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[5]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"TreatingProvider\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[6]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"TreatmentLocation\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[7]\"},{\"AdditonalInfo\":{\"Click\":[],\"fileds\":\"EnteredBy\"},\"xpath\":\"//table[@id='claimTable']/tbody/tr[1]/td[2]/div/div[8]\"},{\"AdditonalInfo\":{\"Click\":[\"//a[contains(text(),'Print this claim')]\"],\"sleep\":5,\"fileds\":\"\"},\"xpath\":\"//td/td/tr[@id='AaBb']\"}]}",
+      "IsActive": true,
+      "DataContextName": "RcmEobClaimMaster"
+    },
+    {
+      "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[],\"fileds\":[]},\"xpath\":\"//table[@id='claimTable']/tbody/tr[3]/td/div/table\"}]}",
+      "IsActive": true,
+      "DataContextName": "RcmEobClaimDetail"
+    },
+     {
+      "XPath": "{\"AllowPdfMerging\": true, \"forCore\": true, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": []}, \"xpath\": \"\"}]}",
+      "DataContextName": "EligibilityFiles"
+     },
+    {
+      "Id": 20,
+      "ClientId": null,
+      "EligibilityPayorInfoId": 12,
+      "DataContextId": 177,
+      "XPath": "{\"Xpaths\":[{\"AdditonalInfo\":{\"Click\":[\"//img[@id='nav_home']\"],\"fileds\":[]},\"xpath\":\"\"}]}",
+      "IsActive": true,
+      "DataContextName": "SearchDashboardFilter",
+      "ProductCategoryId": 2
+    }
+  ],
+  "SearchParameters": [
+    {
+      "Id": 19,
+      "EligibilityPayorInfoId": 20,
+      "JsonSettings": "{\"Search\":{\"Settings\":{\"PreSteps\":{\"Clicks\":[\"//button[@id='trust-browser-button']\",\"//a[@id='search_claim']\",\"//div[@id='searchButtonAnything']/img\"],\"AdditonalInfo\":{\"sleep\":2}},\"SearchButtonXpath\":\"//input[@id='anythingButton']\",\"PostSteps\":{\"AdditonalInfo\":{\"sleep\":5,\"Click\":[],\"script\":{\"js\":\"document.querySelectorAll('[target]').forEach((ele)=>{ele.removeAttribute('target')})\",\"arg1\":\"\",\"arg2\":\"\"}},\"Clicks\":[\"//div[@id='searchTogResultsClaims']/table/tbody/tr[2]/td[2]/a\"]}},\"Queries\":[{\"Data\":\"ReceivedDateRangeStart\",\"Xpath\":\"//input[@id='receivedFrom']\"},{\"Data\":\"ReceivedDateRangeEnd\",\"Xpath\":\"//input[@id='receivedTo']\"},{\"Data\":\"SubscriberId\",\"Xpath\":\"//input[@id='subscriberId']\"}]}}",
+      "IsActive": true
+    }
+  ]
+}
+
+
