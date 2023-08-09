@@ -52,6 +52,7 @@ def clean_claiMmaster(claimmaster, texts):
 
 
 def get_claimMaster(data,texts):
+    print("IN THE CLAIMMASTER")
     master = data['RcmEobClaimMaster'][0]
     firstname = master['FirstName'].split('\n')[1]
     lastname = master['LastName'].split('\n')[1]
@@ -71,7 +72,8 @@ def get_claimMaster(data,texts):
         "ProviderLocation": master['TreatmentLocation'].split('\n')[1],
         "RenderingProvider": master['TreatingProvider'].split('\n')[1].split('(')[0].strip(),
         "EnteredBy": master['EnteredBy'].split('\n')[1],
-        "url": master['url']
+        "url": master['url'],
+        "RcmGridViewId": 0
     }
     patientname = firstname+' '+lastname
     claimmaster.update({'PatientName': patientname, 'ClaimStatus': master['Status'], 'DateProcessed': processed})
@@ -111,6 +113,7 @@ def get_claimdetails(data, texts):
         d['AreaOrTooth'] = d['AreaOrtooth#']
         d['BilledAmount'] = d['Billedamount']
         d['PaidAmount'] = d['Paidamount']
+        d["RcmGridViewId"] = 0
         del d['Cdt']
         del d['AreaOrtooth#']
         del d['Proceduredate']
@@ -123,6 +126,11 @@ def get_claimdetails(data, texts):
 
 
 def main(data):
+    print("\n")
+    print("\n")
+    print("\n")
+    print("\n")
+
     url = data["RcmEobClaimMaster"][0]["url"]
     print("main 1")
 
@@ -131,14 +139,13 @@ def main(data):
     flitz_texts = get_flitz_texts(file_path)
 
     claimMaster = get_claimMaster(data, texts)
+    claimMaster = [claimMaster]
     claimdetails = get_claimdetails(data, flitz_texts)
-
-    # print("Claim master", claimMaster)
-
 
     json_data = {
         'RcmEobClaimMaster': claimMaster,
-        'RcmEobClaimDetail': claimdetails
+        'RcmEobClaimDetail': claimdetails,
+        'EligibilityFiles': data["EligibilityFiles"]
     }
     return json_data
 

@@ -254,11 +254,10 @@ def WraperHandler(InputParameters,data,scraped_data,patient,browser):
             from wrapers import mcnaRCM
             scraped_data=mcnaRCM.main(scraped_data)
 
-        # for i, claim in enumerate(scraped_data["RcmEobClaimMaster"], start=1):
-        #     claim["RecordId"] = i
-        #     claim["RecordID"] = str(uuid.uuid4())
-        # for i, claim in enumerate(scraped_data["RcmEobClaimDetail"], start=1):
-        #     claim["RecordId"] = i
-        #     claim["RecordID"] = str(uuid.uuid4())
+        for i, claim in enumerate(scraped_data["RcmEobClaimMaster"], start=1):
+            claim["RecordId"] = i
+        for i, claim in enumerate(scraped_data["RcmEobClaimDetail"], start=1):
+            claim["RecordId"] = i
+
 
     return scraped_data           

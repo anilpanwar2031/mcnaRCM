@@ -1,24 +1,32 @@
 {
-    "RcmEobClaimMaster": {
-        "ClaimNumber": "1168984193666",
-        "SubmittedDate": "07/18/2023",
-        "DateOfBirth": "10/31/2017",
-        "SubscriberId": "723291765",
-        "FirstName": "ALEXANDER",
-        "LastName": "HICKSON",
-        "Zip": "76013",
-        "ProviderName": "ALI AL AQEELI, DDS",
-        "ProviderLocation": "OFFICE",
-        "RenderingProvider": "ALI AL AQEELI, DDS",
-        "EnteredBy": "BRYANNTA BATTLE",
-        "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/AO5ZSS0Z2R/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
-        "PatientName": "ALEXANDER HICKSON",
-        "ClaimStatus": "Posted",
-        "DateProcessed": "07/26/2023",
-        "PayeeAddress": "1621 PRECINCT LINE RD HURST, TX 76054",
-        "PayeeName": "PARK PLACE PEDIATRIC DENTISTRY AND ORTHODONTICS",
-        "PayeePhone": "(817) 281-3191"
-    },
+    "RcmEobClaimMaster": [
+        {
+            "ClaimNumber": "1168984193666",
+            "SubmittedDate": "07/18/2023",
+            "DateOfBirth": "10/31/2017",
+            "SubscriberId": "723291765",
+            "FirstName": "ALEXANDER",
+            "LastName": "HICKSON",
+            "Zip": "76013",
+            "ProviderName": "ALI AL AQEELI, DDS",
+            "ProviderLocation": "OFFICE",
+            "RenderingProvider": "ALI AL AQEELI, DDS",
+            "EnteredBy": "BRYANNTA BATTLE",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/PZQ3I6FNJX/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "RcmGridViewId": 0,
+            "PatientName": "ALEXANDER HICKSON",
+            "ClaimStatus": "Posted",
+            "DateProcessed": "07/26/2023",
+            "PayeeAddress": "1621 PRECINCT LINE RD HURST, TX 76054",
+            "PayeeName": "PARK PLACE PEDIATRIC DENTISTRY AND ORTHODONTICS",
+            "PayeePhone": "(817) 281-3191",
+            "RecordId": 0,
+            "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+            "EligibilityVerificationId": 34597,
+            "PatientId": "4343",
+            "PMSSubscriberId": "723291765"
+        }
+    ],
     "RcmEobClaimDetail": [
         {
             "Description": "TOPICAL APPLICATION OF FLUORIDE VARNISH",
@@ -31,11 +39,12 @@
             "AreaOrTooth": "",
             "BilledAmount": "$66.00",
             "PaidAmount": "$14.70",
+            "RcmGridViewId": 0,
+            "RecordId": 0,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 0
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "PROPHYLAXIS - CHILD",
@@ -48,11 +57,12 @@
             "AreaOrTooth": "",
             "BilledAmount": "$83.00",
             "PaidAmount": "$36.75",
+            "RcmGridViewId": 0,
+            "RecordId": 1,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 1
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "CARIES RISK ASSESSMENT DOCUMENTATION, WITH A FINDING OF HIGH RISK",
@@ -65,11 +75,12 @@
             "AreaOrTooth": "",
             "BilledAmount": "$5.00",
             "PaidAmount": "$0.00",
+            "RcmGridViewId": 0,
+            "RecordId": 2,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 2
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "BITEWINGS - TWO FILMS",
@@ -82,11 +93,12 @@
             "AreaOrTooth": "",
             "BilledAmount": "$60.00",
             "PaidAmount": "$23.38",
+            "RcmGridViewId": 0,
+            "RecordId": 3,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 3
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "INTRAORAL - PERIAPICAL EACH ADDITIONAL FILM",
@@ -99,11 +111,12 @@
             "AreaOrTooth": "O",
             "BilledAmount": "$32.00",
             "PaidAmount": "$11.51",
+            "RcmGridViewId": 0,
+            "RecordId": 4,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 4
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "INTRAORAL - PERIAPICAL FIRST FILM",
@@ -116,11 +129,12 @@
             "AreaOrTooth": "E",
             "BilledAmount": "$36.00",
             "PaidAmount": "$12.56",
+            "RcmGridViewId": 0,
+            "RecordId": 5,
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
-            "PMSSubscriberId": "723291765",
-            "RecordId": 5
+            "PMSSubscriberId": "723291765"
         },
         {
             "Description": "PERIODIC ORAL EVALUATION \u2013 ESTABLISHED PATIENT",
@@ -133,11 +147,47 @@
             "AreaOrTooth": "",
             "BilledAmount": "$67.00",
             "PaidAmount": "$28.85",
+            "RcmGridViewId": 0,
+            "RecordId": 6,
+            "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+            "EligibilityVerificationId": 34597,
+            "PatientId": "4343",
+            "PMSSubscriberId": "723291765"
+        }
+    ],
+    "EligibilityFiles": [
+        {
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/RQZWFTP3Y0/merged_pdf.pdf",
+            "fileName": "merged_pdf.pdf",
+            "description": "",
+            "sourceType": "PDF",
             "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
             "EligibilityVerificationId": 34597,
             "PatientId": "4343",
             "PMSSubscriberId": "723291765",
-            "RecordId": 6
+            "RecordId": 0
+        },
+        {
+            "fileName": "MCNA%20Online%20Portal.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/PZQ3I6FNJX/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "description": "",
+            "sourceType": "PDF",
+            "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+            "EligibilityVerificationId": 34597,
+            "PatientId": "4343",
+            "PMSSubscriberId": "723291765",
+            "RecordId": 1
+        },
+        {
+            "fileName": "merged_pdf.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/RQZWFTP3Y0/merged_pdf.pdf",
+            "description": "",
+            "sourceType": "PDF",
+            "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+            "EligibilityVerificationId": 34597,
+            "PatientId": "4343",
+            "PMSSubscriberId": "723291765",
+            "RecordId": 2
         }
     ]
 }

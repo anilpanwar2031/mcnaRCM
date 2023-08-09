@@ -252,9 +252,11 @@ class Login:
                 if self.additionalInfo.get("AfterCredentialsCaptcha"):                
                     print('Wait for captcha')
                     captcha_solver(browser,wait,iframexpath,aftercaptchaxpath) 
+
             if len(self.otp_input_button_xpath)>0:
                 OtpQueueChecker(self.payorname,self.otp_email)             
             browser.find_element(By.XPATH, self.login_button_xpath).click()        
+
             if self.additionalInfo.get('IsCaptchaRequired'):
                 if self.additionalInfo.get("AfterloginCaptcha"):                
                     print('Wait for captcha')

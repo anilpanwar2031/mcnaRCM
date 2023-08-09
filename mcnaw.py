@@ -132,15 +132,17 @@ def main(data):
     texts = get_plumber_texts(file_path)
     flitz_texts = get_flitz_texts(file_path)
 
-    claimMaster = get_claimMaster(data, texts)
+    claimMaster = [get_claimMaster(data, texts)]
     claimdetails = get_claimdetails(data, flitz_texts)
+    print("ELII", data["EligibilityFiles"])
 
     print("Claim master", claimMaster)
 
 
     json_data = {
         'RcmEobClaimMaster': claimMaster,
-        'RcmEobClaimDetail': claimdetails
+        'RcmEobClaimDetail': claimdetails,
+        'EligibilityFiles': data["EligibilityFiles"]
     }
 
 

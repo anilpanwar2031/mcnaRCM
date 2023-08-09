@@ -1,24 +1,26 @@
 {
-    "RcmEobClaimMaster": {
-        "ClaimNumber": "1168984193666",
-        "SubmittedDate": "07/18/2023",
-        "DateOfBirth": "10/31/2017",
-        "SubscriberId": "723291765",
-        "FirstName": "ALEXANDER",
-        "LastName": "HICKSON",
-        "Zip": "76013",
-        "ProviderName": "ALI AL AQEELI, DDS",
-        "ProviderLocation": "OFFICE",
-        "RenderingProvider": "ALI AL AQEELI, DDS",
-        "EnteredBy": "BRYANNTA BATTLE",
-        "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/D44MYOIH71/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
-        "PatientName": "ALEXANDER HICKSON",
-        "ClaimStatus": "Posted",
-        "DateProcessed": "07/26/2023",
-        "PayeeAddress": "1621 PRECINCT LINE RD HURST, TX 76054",
-        "PayeeName": "PARK PLACE PEDIATRIC DENTISTRY AND ORTHODONTICS",
-        "PayeePhone": "(817) 281-3191"
-    },
+    "RcmEobClaimMaster": [
+        {
+            "ClaimNumber": "1168984193666",
+            "SubmittedDate": "07/18/2023",
+            "DateOfBirth": "10/31/2017",
+            "SubscriberId": "723291765",
+            "FirstName": "ALEXANDER",
+            "LastName": "HICKSON",
+            "Zip": "76013",
+            "ProviderName": "ALI AL AQEELI, DDS",
+            "ProviderLocation": "OFFICE",
+            "RenderingProvider": "ALI AL AQEELI, DDS",
+            "EnteredBy": "BRYANNTA BATTLE",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/LD7DT1WLPF/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "PatientName": "ALEXANDER HICKSON",
+            "ClaimStatus": "Posted",
+            "DateProcessed": "07/26/2023",
+            "PayeeAddress": "1621 PRECINCT LINE RD HURST, TX 76054",
+            "PayeeName": "PARK PLACE PEDIATRIC DENTISTRY AND ORTHODONTICS",
+            "PayeePhone": "(817) 281-3191"
+        }
+    ],
     "RcmEobClaimDetail": [
         {
             "Description": "TOPICAL APPLICATION OF FLUORIDE VARNISH",
@@ -103,6 +105,26 @@
             "AreaOrTooth": "",
             "BilledAmount": "$67.00",
             "PaidAmount": "$28.85"
+        }
+    ],
+    "EligibilityFiles": [
+        {
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/K4V3JCQA19/merged_pdf.pdf",
+            "fileName": "merged_pdf.pdf",
+            "description": "",
+            "sourceType": "PDF"
+        },
+        {
+            "fileName": "MCNA%20Online%20Portal.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/LD7DT1WLPF/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "description": "",
+            "sourceType": "PDF"
+        },
+        {
+            "fileName": "merged_pdf.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/K4V3JCQA19/merged_pdf.pdf",
+            "description": "",
+            "sourceType": "PDF"
         }
     ]
 }

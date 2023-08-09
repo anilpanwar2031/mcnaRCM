@@ -24,13 +24,15 @@ def authenticate_imap(tenantID, clientID, clientSecret, username):
         imap = imaplib.IMAP4_SSL("outlook.office365.com", 993)
         imap.debug = 0
         access_token = get_access_token(tenantID, clientID, clientSecret)
+        print("Access token >>", access_token)
 
         imap.authenticate("XOAUTH2", lambda x:generate_auth_string(username,access_token['access_token']))
         status, messages=imap.select('inbox')
         messages = int(messages[0])        # get number of messages
         statusmessage="IMAP Auth Success"
         return imap, messages, statusmessage
-    except:
+    except Exception as e:
+        print("Message  >>>", e)
         return '', '', "IMAP Auth Failed"
 def mail_time_check(seconds, messages, imap):
     N=10
