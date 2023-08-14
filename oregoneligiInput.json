@@ -1,0 +1,115 @@
+{
+    "InputParameters": {
+        "PayorName": "Delta Dental of Oregon",
+        "PayorId": 116,
+        "ClientId": "857dc9bd-c432-482d-af84-437a48ccecfe",
+        "AppName": "Eligibility",
+        "WebsiteId": "OREGONALASKA_001",
+        "ProcCodes": [
+            "D0120",
+            "D0140",
+            "D0150",
+            "D0170",
+            "D0210",
+            "D0220",
+            "D0230",
+            "D0240",
+            "D0272",
+            "D0274",
+            "D0330",
+            "D1110",
+            "D1120",
+            "D1206",
+            "D1208",
+            "D1351",
+            "D1354",
+            "D1516",
+            "D1517",
+            "D2140",
+            "D2150",
+            "D2160",
+            "D2161",
+            "D2391",
+            "D2392",
+            "D2393",
+            "D2394",
+            "D2930",
+            "D2933",
+            "D2934",
+            "D3220",
+            "D7140",
+            "D9110",
+            "D9230"
+        ],
+        "ScheduleId": 873
+    },
+    "PatientData": [
+
+        {
+            "EligibilityVerificationId": 30743,
+            "PatientId": "29750",
+            "AppointmentId": "263430",
+            "AppointmentDateTime": "2023-06-06T14:30:00+00:00",
+            "LastName": "Vaninger",
+            "FirstName": "Mabel",
+            "BirthDate": "01/08/2015",
+            "Relationship": "Other",
+            "PatientMemberId": "W43348736",
+            "SubscriberId": "W43348736",
+            "SubscriberFirstName": "Mabel",
+            "SubscriberLastName": "Vaninger",
+            "SubscriberBirthDate": "01/08/2015",
+            "ClinicServerId": "0991b8eb-7d97-2bf1-db4e-4dbe82aff602",
+            "ClinicNum": "1"
+        }
+    ],
+    "Login": {
+        "Url": "https://www.modahealth.com/dbt/DentalSearch",
+        "LoginId": "PayorAccessStLouis",
+        "Password": "Changeme1!",
+        "OtpRequired": false,
+        "OtpEmail": "TODO"
+    },
+    "Xpaths": [
+        {
+            "XPath": "{\"DataContextId\":\"1\",\"DataContextName\":\"EligibilityLogin\",\"Click\":null,\"Xpaths\":[{\"UsernameXpath\":\"//input[@id='usernameInput']\",\"PasswordXpath\":\"//input[@id='passwordInput']\",\"LoginButtonXpath\":\"//button[normalize-space()='Sign in']\",\"OtpInputXpath\":\"\",\"OtpSubmitXpath\":\"\",\"PreSteps\":[],\"PostSteps\":[],\"OtpXpath\":\"\",\"AdditionalInfo\":{\"StepsAfterUsernameInput\":{\"Click\":[\"//button[normalize-space()='Next']\"]},\"sleep\":5,\"Click\":[],\"script\":{\"js\":\"document.querySelectorAll('[target]').forEach((ele)=>{ele.removeAttribute('target')})\",\"arg1\":\"\",\"arg2\":\"\"}}}]}",
+            "DataContextName": "EligibilityLogin"
+        },
+        {
+            "XPath": "{\"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"IdNumber\"}, \"xpath\": \"//dt[contains(text(), 'ID number')]//following-sibling::dd\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"InsuranceType\"}, \"xpath\": \"//dt[contains(text(), 'Insurance type')]//following-sibling::dd\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"SubscriberName\"}, \"xpath\": \"//dt[contains(text(), 'Subscriber name')]//following-sibling::dd\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"GroupNumber\"}, \"xpath\": \"//dt[contains(text(), 'Group number')]//following-sibling::dd\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"GroupName\"}, \"xpath\": \"//dt[contains(text(), 'Group name')]//following-sibling::dd\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"\"}, \"xpath\": \"//table[./caption/h4[contains(text(), 'Patient name')]]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"DependentStopAge\"}, \"xpath\": \"//dd[contains(@id, 'dependent-stop-age')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"StudentStopAge\"}, \"xpath\": \"//dd[contains(@id, 'student-stop-age')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"SealantStopAge\"}, \"xpath\": \"//dd[contains(@id, 'sealant-stop-age')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"FlurideStopAge\"}, \"xpath\": \"//dd[contains(@id, 'fluoride-stop-age')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"OrthoEligibility\"}, \"xpath\": \"//dd[contains(@id, 'ortho-eligibility')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"PolicyYear\"}, \"xpath\": \"//th[contains(text(),'Service from')]\"}]}",
+            "DataContextName": "EligibilityPatientVerification"
+        },
+        {
+            "XPath": "{\"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": [\"Type\", \"Individual\", \"IndividualRemaining\", \"Family\", \"FamilyRemaining\"], \"type\": \"Type3\"}, \"xpath\": \"//table[./caption/h4[contains(text(), 'Plan maximums and deductibles')]]\"}]}",
+            "DataContextName": "EligibilityMaximums"
+        },
+        {
+            "XPath": "{\"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [\"//div[contains(@class, 'footer')]/nav/ul/li/a[contains(text(), 'Contact us')]\"], \"window_number_after_clicks\": 1, \"fileds\": \"ClaimSubmissionAddress\"}, \"xpath\": \"//h4[contains(text(), 'Claims submission')]/following-sibling::p\"}]}",
+            "DataContextName": "EligibilityServiceTreatmentHistory"
+        },
+        {
+            "XPath": "{\"Xpaths\": [{\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"\"}, \"xpath\": \"//table[contains(@id, 'preventive-services-table')]\"}]}",
+            "DataContextName": "TreatmentHistorySummary"
+        },
+        {
+            "XPath": "{\"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [], \"fileds\": [\"ServiceType\", \"BenefitPercent\", \"IncentiveIndicator\", \"Deductible\", \"AnnualLimit\", \"LifeTimeLimit\"], \"type\": \"Type3\"}, \"xpath\": \"//table[./caption/h4[contains(text(), 'Benefit information')]]\"}, {\"AdditonalInfo\": {\"Click\": [\"//ul//li//a[contains(text(), 'Group limitations')]\"], \"fileds\": [\"BENEFITS\", \"PREVENTIVE\"], \"type\": \"Type5\"}, \"xpath\": \"//table[contains(@id, 'cisNotes')]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P1\"}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P3\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[3]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P4\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[4]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P5\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[5]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P6\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[6]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P7\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[7]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P8\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[8]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P9\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[9]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P10\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[10]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P11\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[11]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Preventive-P12\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PREVENTIVE:')]/following-sibling::p[12]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"BasicRestorative\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'BASIC RESTORATIVE:')]/following-sibling::p\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"ENDODONTIC-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ENDODONTIC:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"ENDODONTIC-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ENDODONTIC:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Periodontic-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PERIODONTIC:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Periodontic-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PERIODONTIC:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"OralSurgery-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ORAL SURGERY:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"OralSurgery-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ORAL SURGERY:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"MajorRestorative-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'MAJOR RESTORATIVE:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"MajorRestorative-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'MAJOR RESTORATIVE:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Prosthodontic-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PROSTHODONTIC:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Prosthodontic-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'PROSTHODONTIC:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P3\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[3]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P4\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[4]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P5\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[5]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Implants-P6\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'IMPLANT:')]/following-sibling::p[6]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Adjunctive-P1\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ADJUNCTIVE:')]/following-sibling::p[1]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Adjunctive-P2\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ADJUNCTIVE:')]/following-sibling::p[2]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Adjunctive-P3\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ADJUNCTIVE:')]/following-sibling::p[3]\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Tmj\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'TMJ:')]/following-sibling::p\"}, {\"AdditonalInfo\": {\"Click\": [], \"fileds\": \"Orthodontia\", \"waitTime\": 0}, \"xpath\": \"//p[contains(text(), 'ORTHODONTIA:')]/following-sibling::p\"}, {\"AdditonalInfo\": {\"Click\": [\"//ul//li//a[contains(text(), 'Procedure utilization')]\"], \"fileds\": \"\"}, \"xpath\": \"\"}]}",
+            "DataContextName": "EligibilityDeductiblesProcCode"
+        },
+        {
+            "XPath": "{\"flatten\": true, \"MultiplElements\": {\"Searchlist\": null, \"action\": \"Sendkeys\", \"PreClicks\": {\"Clicks\": []}, \"InputElementsXpath\": \"//input[contains(@id, 'procedureId')]\", \"SearchButtonXpath\": \"//button[contains(@id, 'submitButton') and contains(text(), 'Check utilization')]\"}, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [\"//input[contains(@id, 'procedureId')]\"], \"fileds\": null, \"AfterClickWait\": 2}, \"xpath\": \"\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"MinimumAge\", \"LoopElement\": {\"fieldName\": \"Proccode\"}}, \"xpath\": \"//dd[contains(@id, 'minimum-age')]\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"MiximumAge\"}, \"xpath\": \"//dd[contains(@id, 'maximum-age')]\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"Description\"}, \"xpath\": \"//dd[contains(@id, 'description')]\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"ServiceType\"}, \"xpath\": \"//dd[contains(@id, 'service-type')]\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"BenefitCurrentlyAvailable\"}, \"xpath\": \"//dd[contains(@id, 'benefit-currently-available')]\"}, {\"AdditonalInfo\": {\"Click\": \"\", \"fileds\": \"BenefitNextAvailable\"}, \"xpath\": \"//dd[contains(@id, 'benefit-next-available')]\"}]}",
+            "DataContextName": "EligibilityBenefits"
+        },
+        {
+            "XPath": "{\"Scrapping\": false, \"Xpaths\": [{\"AdditonalInfo\": {\"Click\": [\"//nav/ul/li/a[contains(text(), 'Dental search')]\"], \"fileds\": []}, \"xpath\": \"\"}]}",
+            "DataContextName": "SearchDashboardFilter"
+        }
+    ],
+    "SearchParameters": [
+        {
+            "Id": 109,
+            "EligibilityPayorInfoId": 116,
+            "JsonSettings": "{\"Search\": {\"Settings\": {\"PreSteps\": {\"Clicks\": [], \"sleep\": 5, \"AdditonalInfo\": {\"aftersleep\": 5}}, \"SearchButtonXpath\": \"\", \"PostSteps\": {\"Clicks\": [\"//table[./caption/h4[contains(text(), 'Plan maximums and deductibles')]]/thead/tr/th/ul/li\", \"//div[contains(@id, 'has-product-id')]/table/tbody/tr/td/font[contains(text(), 'Active')]\"], \"sleep\": 5, \"AdditonalInfo\": {\"aftersleep\": 5}}}, \"Queries\": [{\"Data\": \"PatientMemberId\", \"Xpath\": \"//input[contains(@name, 'memberId')]\"}, {\"Data\": \"LastName\", \"Xpath\": \"//input[contains(@name, 'lastName')]\"}, {\"Data\": \"FirstName\", \"Xpath\": \"//input[contains(@name, 'firstName')]\", \"PostClicks\": [\"//form//button[contains(text(), 'Search')]\"]}]}}",
+            "IsActive": true
+        }
+    ]
+}

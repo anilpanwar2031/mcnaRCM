@@ -512,5 +512,5 @@ def kickoff(message,message_id,inputurl):
 def kickoff(message,message_id):
     start(message,message_id,"")
 
-d=json.loads(open("mcnaInput.json","r").read())
+d=json.loads(open("oregoneligiInput.json","r").read())
 kickoff(d,"8a7f3sd254221edssd")

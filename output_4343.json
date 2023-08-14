@@ -16,7 +16,7 @@
             "TreatingProvider": "Treating Provider:\nALI AL AQEELI, DDS (67662)",
             "TreatmentLocation": "Treatment Location:\nOFFICE",
             "EnteredBy": "Entered By:\nBRYANNTA BATTLE",
-            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/PZQ3I6FNJX/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf"
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/EKDHPO8VJS/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf"
         }
     ],
     "RcmEobClaimDetail": [
@@ -119,20 +119,20 @@
     ],
     "EligibilityFiles": [
         {
-            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/RQZWFTP3Y0/merged_pdf.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/KUM0MIL4GW/merged_pdf.pdf",
             "fileName": "merged_pdf.pdf",
             "description": "",
             "sourceType": "PDF"
         },
         {
             "fileName": "MCNA%20Online%20Portal.pdf",
-            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/PZQ3I6FNJX/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/rcm-claims-res-blob/Revenue%20Cycle%20Management/Managed%20Care%20of%20North%20America-%20MCNA/EKDHPO8VJS/8a7f3sd254221edssd/MCNA%20Online%20Portal.pdf",
             "description": "",
             "sourceType": "PDF"
         },
         {
             "fileName": "merged_pdf.pdf",
-            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/RQZWFTP3Y0/merged_pdf.pdf",
+            "url": "https://sdrcmclaimsscrappersa.blob.core.windows.net/files/KUM0MIL4GW/merged_pdf.pdf",
             "description": "",
             "sourceType": "PDF"
         }
